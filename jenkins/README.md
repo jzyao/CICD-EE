@@ -1,7 +1,7 @@
 # Jenkins Guide for Docker EE - Swarm
 
 fork from https://github.com/ollypom/ee-jenkins  
-add  Jenkins slave step
+add  Jenkins slave ssh step
 
 ## Build your images and push them to DTR (Distributed Trusted Registry)
 
