@@ -11,7 +11,7 @@ Lock this project to Jenkins slave worker node
 
 ### Add build step --> Execute shell. 
 
-Please replace the <DTR_URL>, <password> with your own
+Please replace the <DTR_URL>, <PASSWORD> with your own
 
 
 ```
@@ -25,7 +25,7 @@ cd CIrepo
 
 docker build -t $DTR_URL/admin/citest:$TAG .
 
-docker login -u admin -p <password> $DTR_URL
+docker login -u admin -p <PASSWORD> $DTR_URL
 
 docker push $DTR_URL/admin/citest:$TAG
 ```
