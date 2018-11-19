@@ -1,5 +1,7 @@
 # Jenkins Guide for Docker EE - Swarm
 
+fork from https://github.com/ollypom/ee-jenkins  
+
 ## Build your images and push them to DTR (Distributed Trusted Registry)
 
 For this environment we build our own Jenkins Master and Jenkins Slaves Images. The Jenkins Master image is the upstream image + our CA certificates.
@@ -69,16 +71,16 @@ Settings > Webooks > Add the payload URL: http://${DTR}:30000/github-webhook/
 
 ## Jenkins Plug-Ins Required
 
-- Yet another Docker Plugin - Credentials Work now!
-------- Git Plugin
-------- Github API plugin
-------- GitHub Authentication plugin - Required to use Access Tokens
+- Docker Plugin 
+- Git Plugin
+- Github API plugin
+- GitHub Authentication plugin - Required to use Access Tokens
 
-## Jenkins Credentials
+## Jenkins Slave Setup
 
-In Jenkins go to Credentials > System > Global Credentials (unrestricted)
+In Jenkins go to Manage Jenkins > Configure System 
 
-Create Docker Host Certificate Authentication for Docker UCP
+Create A New Cloud
 
 ![Credentials](/docs/images/jenkinscreds.png?raw=true "Jenkins Credentials")
 
