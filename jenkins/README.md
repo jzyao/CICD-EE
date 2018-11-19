@@ -102,4 +102,4 @@ Configure docker template detail
 Everything is now good to go for your Jenkins Config. 
 Your now ready to build your Pipeline Jobs :)
 
-As the pipelines are consistent with Kubernetes, they can be found here: [Pipelines](/Pipeline.md)
+As the pipelines are consistent with Kubernetes, they can be found here: [Pipelines](Pipeline.md)
