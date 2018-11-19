@@ -1,6 +1,7 @@
 # Jenkins Guide for Docker EE - Swarm
 
 fork from https://github.com/ollypom/ee-jenkins  
+add  Jenkins slave step
 
 ## Build your images and push them to DTR (Distributed Trusted Registry)
 
@@ -57,7 +58,6 @@ Copy accross this public key to your Github Account
 
 - Github.com > Settings > SSH Keys
 
-![SSH Keys](/docs/images/githubsshkey.png?raw=true "Jenkins SSH Key")
 
 ```
 / $ ssh git@github.com
@@ -67,7 +67,6 @@ Copy accross this public key to your Github Account
 
 Settings > Webooks > Add the payload URL: http://${DTR}:30000/github-webhook/
 
-![Webhook](/docs/images/githubwebhook.png?raw=true "Github Webhook")
 
 ## Jenkins Plug-Ins Required
 
