@@ -8,9 +8,9 @@ samples to setup CICD in EE cluster
 
 [Sample](https://github.com/jzyao/CICD-EE/tree/master/jenkins)
 
-image
+image:
 
-[Jenkins-master](https://hub.docker.com/r/jzyao/jenkins-master/) in docker
+[Jenkins-master-docker](https://hub.docker.com/r/jzyao/jenkins-master/)
 
 [Jenkins-slave-ssh-docker](jzyao/jenkins-slave-ssh-docker):  you can also perform docker workload in this slave.
 
