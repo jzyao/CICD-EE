@@ -1,4 +1,4 @@
-# PIPELINE
+# PIPELINE Sample
 
 ## demo 
 
@@ -32,8 +32,9 @@ docker push $DTR_URL/admin/citest:$TAG
 
 ### Run the build
 
-You can watch the output of the Build by clicking on the task number in the Build History and then selecting Build Output 
-It will take few seconds to kick off a slave container in worker node. Patient.
+You can watch the output of the Build by clicking on the task number in the Build History and then selecting Build Output.
+
+It will take few seconds to kick off a slave container in worker node...3.2.1
 
 ![time](/jenkins/images/time.jpg?raw=true "time")
 
