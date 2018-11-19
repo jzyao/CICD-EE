@@ -1,4 +1,4 @@
-# PIPELINE Sample
+# Pipeline Sample
 
 ## demo 
 
