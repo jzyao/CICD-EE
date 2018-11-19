@@ -1,4 +1,4 @@
-# PIPELINE
+# Pipeline Sample
 
 ## demo 
 
@@ -11,7 +11,7 @@ Lock this project to Jenkins slave worker node
 
 ### Add build step --> Execute shell. 
 
-Please replace the <DTR_URL>, <password> with your own
+Please replace the <DTR_URL>, <PASSWORD> with your own
 
 
 ```
@@ -25,14 +25,18 @@ cd CIrepo
 
 docker build -t $DTR_URL/admin/citest:$TAG .
 
-docker login -u admin -p <password> $DTR_URL
+docker login -u admin -p <PASSWORD> $DTR_URL
 
 docker push $DTR_URL/admin/citest:$TAG
 ```
 
 ### Run the build
 
-You can watch the output of the Build by clicking on the task number in the Build History and then selecting Build Output 
+You can watch the output of the Build by clicking on the task number in the Build History and then selecting Build Output.
+
+It will take few seconds to kick off a slave container in worker node...3.2.1
+
+![time](/jenkins/images/time.jpg?raw=true "time")
 
 
 The console output will show you all the details from the script execution. 
