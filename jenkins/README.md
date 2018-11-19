@@ -95,7 +95,8 @@ Configure docker template detail
 
 * better to pull slave image in slave node before pipeline.
 
-![configure template](/jenkins/images/3.png?raw=true "configure template detail")
+![configure template](/jenkins/images/2.png?raw=true "configure template detail")
+![configure template](/jenkins/images/1.png?raw=true "configure template detail")
 
 
 Everything is now good to go for your Jenkins Config. 
