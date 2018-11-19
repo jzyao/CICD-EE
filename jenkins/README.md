@@ -82,17 +82,21 @@ In Jenkins go to Manage Jenkins > Configure System
 
 Create A New Cloud
 
-![Credentials](/docs/images/jenkinscreds.png?raw=true "Jenkins Credentials")
+![cloud](/jenkins/images/5.png?raw=true "Add a new cloud")
 
---------Create a personal access token on Github. Within Jenkins go to Global Credentials and a secret text entry. Insert your Personall Access token here.
+Configure docker detail
 
-Head to Manage Jenkins > System Configuration
+* choose a dedicated EE worker as Jenkins slave host node. 
+* make sure docker host can be connected remotely.
 
--------Scroll down to Github > Github Servers. Specify your secret text credentials from the list and test the conntection to github.
+![configure](/jenkins/images/4.png?raw=true "configure cloud detail")
 
-Create a new Cloud using the Yet another Docker Plugin. And test connectoin :)
+Configure docker template detail
 
-![Cloud Config](/docs/images/NewCloudConfig.png?raw=true "New Cloud Config")
+* better to pull slave image in slave node before pipeline.
+
+![configure template](/jenkins/images/3.png?raw=true "configure template detail")
+
 
 Everything is now good to go for your Jenkins Config. 
 Your now ready to build your Pipeline Jobs :)
